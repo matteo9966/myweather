@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <title>Meteo</title>
+</head>
+<body>
+    <div class="container">
+        <span><label for="latitude">Latitudine:</label><br><input id="latitude" type="text"> </span>
+        <span><label for="longitude">Longitudine:</label><br><input id="longitute" type="text"></span>
+        <span><input id="btn" type="button" value="Invia"></span>
+    </div>
+    <div class="meteoInfo">
+        <div class="image"></div>
+        <div class="informazioni">
+            <div class="info"></div>
+            <div class="airqual"></div>
+            <!-- il link del api per ricevere l'air quality. questo esercizio prevede anche di gestire gli errori -->
+            <!-- https://u50g7n0cbj.execute-api.us-east-1.amazonaws.com/v2/latest?limit=1&page=1&offset=0&coordinates=40.45889,18.11611&radius=1000 -->
+            <!-- https://api.openaq.org/v1/latest?coordinates=40.45889,18.11611 -->
+        </div>
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
