@@ -8,7 +8,9 @@ db.loadDatabase();
 
 app.use(express.static('public'));
 app.use(express.json());
-app.listen(3000,()=>{console.log("ascolto sulla 3000")});
+
+let port = process.env.port || 3000;
+app.listen(port,()=>{console.log("ascolto sulla 3000")});
 
 
 /* i dati che io salvo sul db sono sono in formato {weather: ... , airQuality: ...} quando devo restituirli al utente per salvarli dal db glieli mando nel formato di array! */
